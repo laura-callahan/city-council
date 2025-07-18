@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laura Callahan for Sheridan City Council</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+  </head>
+  <style>
+    body {
+       font-family: "Open Sans", sans-serif;
+       margin: 0;
+    }
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        background: linear-gradient(to right, blue 0%, blue 50%, white 75%, white 100%);
+        padding: 0 1rem;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    img {
+        width: 500px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        width: max-content;
+    }
+
+    #background-section {
+        background-image: url(cat.jpeg);
+        background-size: 100vw;
+        height: calc(0.5*100vh);
+        z-index: 0;
+    }
+
+    #background-section > * {
+        width: 600px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        border-bottom: transparent 4px solid;
+    }
+
+    #email:hover, nav a:hover {
+        border-bottom: blue 4px solid;
+    }
+
+    #sign-up {
+        background-color: blue;
+        color: white;
+        padding: 0.5rem;
+    }
+
+    #sign-up:hover {
+        text-decoration: none;
+    }
+
+    #contact-section a {
+        display: block;
+        margin-bottom: 1rem;
+        width: max-content;
+    }
+  </style>
+  <body>
+    <main>
+        <div class="grid-wrapper">
+            <h1>Laura Callahan for Sheridan City Council</h1>  
+            <nav>
+                <a href="#background">Background</a>
+                <a href="#platform">Platform</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <section id="background-section">
+            <h2 id="background">Background</h2>
+            <div>The daughter of an Army officer, Laura moved to Colorado in 2013.
+                Since graduating from the University of Denver, she has been working as a 
+            software engineer. Laura moved to the City of Sheridan in 2021, and has been
+        an active member of the Planning Commission during her residence. </div>
+        </section>
+        <section>
+            <h2 id="platform">Platform</h2>
+            <h3>Increase housing affordability</h3>
+            <div>Sheridan can do more to improve the affordability for renters and buyers. Laura is a proponent of
+                allowing residential zoning to meet the needs of the community, encouraging new housing development, and keeping Sheridan's property taxes low.
+            </div>
+
+            <h3>Multi-modal safety improvements</h3>
+            <div>Laura would like to improve the safety of pedestrians and cyclists and make Sheridan more accessible to people with disabilities, 
+                children, and residents on foot. She would work with city planners and constituents to determine best practices for 
+                improving safety and ease of use.
+            </div>
+
+            <h3>Improve Colorado Department of Transportation relations</h3>
+            <div>CDOT policy and mainenance has a more substantial effect on Sheridan than neighboring cities given our proximity to Santa Fe Drive,
+                Federal Boulevard, and US Route 285. Because of this, Sheridan needs to collaborate with CDOT to ensure our community is not neglected.
+                Current leadership has resisted creating a more formal relationship with CDOT, shutting our community out of the conversation.
+            </div>
+
+            <h3>Encouraging business development</h3>
+            <div>Many of Sheridan's businesses do not meet the needs of the community. Sheridan should encourage business development efforts that
+                focus on how to entice people to spend more time, and thus money, in our neighborhood. This would include 
+                beautification initiatives, a focus on recreational businesses, and walkability in new development.
+            </div>
+        </section>
+        <section id="contact-section">
+            <h2 id="contact">Contact</h2>
+            <a href="mailto:lauracallahanforsheridan@email.com" id="email">lauracallahanforsheridan@gmail.com</a>
+            <a href='https://forms.gle/QJ6UxfpWBiZwNTbL9' id="sign-up">Sign up for Laura's mailing list</a>
+        </section>
+    </main>
+  </body>
+</html>
