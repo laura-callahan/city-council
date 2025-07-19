@@ -21,7 +21,7 @@
         grid-template-columns: 3fr 1fr;
         align-items: center;
         gap: 1rem;
-        background: linear-gradient(to right, blue 0%, blue 50%, white 75%, white 100%);
+        background: linear-gradient(to right, #394fff 0%, #394fff 50%, white 75%, white 100%);
         padding: 0 1rem;
     }
 
@@ -43,10 +43,28 @@
     }
 
     #background-section {
+        height: calc(0.3*100vh);
+        z-index: 0;
+    }
+
+    #headline {
         background-image: url(cat.jpeg);
         background-size: 100vw;
         height: calc(0.5*100vh);
         z-index: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    #headline > div {
+       width: 100%;
+    }
+
+    #headline > h2, #headline > h3 {
+        padding: 0.25;
+        margin: 0 1rem;
     }
 
     #background-section > * {
@@ -54,7 +72,8 @@
     }
 
     section {
-        padding: 1rem;
+        margin: 0;
+        padding: 0.25rem;
     }
 
     a {
@@ -63,11 +82,11 @@
     }
 
     #email:hover, nav a:hover {
-        border-bottom: blue 4px solid;
+        border-bottom: #394fff 4px solid;
     }
 
     #sign-up {
-        background-color: blue;
+        background-color: #394fff;
         color: white;
         padding: 0.5rem;
     }
@@ -81,17 +100,23 @@
         margin-bottom: 1rem;
         width: max-content;
     }
+
   </style>
   <body>
     <main>
         <div class="grid-wrapper">
-            <h1>Laura Callahan for Sheridan City Council</h1>  
+            <h1>Laura Callahan</h1>  
             <nav>
                 <a href="#background">Background</a>
                 <a href="#platform">Platform</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
+        <section id="headline">
+            <h2>Laura Callahan</h2>
+            <div></div>
+            <h3>For Sheridan City Council</h3>
+        </section>
         <section id="background-section">
             <h2 id="background">Background</h2>
             <div>The daughter of an Army officer, Laura moved to Colorado in 2013.
