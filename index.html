@@ -6,27 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laura Callahan for Sheridan City Council</title>
     <!-- <link rel="stylesheet" href="./style.css"> -->
-    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="./favicon.png" type="image">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=League+Script&display=swap" rel="stylesheet">
   </head>
   <style>
     body {
-       font-family: "Open Sans", sans-serif;
+       font-family: "Bricolage Grotesque", sans-serif;
        margin: 0;
+    }
+
+    @property --blue {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #222F99;
+    }
+
+    @property --hover-duration {
+        syntax: "<duration>";
+        inherits: false;
+        initial-value: 0.3s;
+    }
+
+    @property --button-text {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: white;
+    }
+
+    .yet-another-wrapper {
+        background: linear-gradient(to right, var(--blue),  white);
+    }
+    
+    .another-wrapper {
+        width: 80%;
+        margin:auto;
     }
     .grid-wrapper {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 2fr;
         align-items: center;
         gap: 1rem;
-        background: linear-gradient(to right, #394fff 0%, #394fff 50%, white 75%, white 100%);
         padding: 0 1rem;
+
+        border: 2px dashed black;
+        border-radius: 15px;
     }
 
     h1 {
         color: white;
+        font-size: 1.5rem;
+        font-family: "League Script", cursive;
+    }
+
+    h2 {
+       font-size: 1.5rem;
+        border-bottom: #b00b0d 4px solid;
+    }
+    h3 {
+        font-size: 1.25rem;
     }
 
     img {
@@ -36,15 +75,15 @@
     nav {
         display: flex;
         justify-content: space-around;
+        font-weight: bold;
     }
 
     nav a {
         width: max-content;
     }
 
-    #background-section {
-        height: calc(0.3*100vh);
-        z-index: 0;
+    section {
+        background-color: #EBEDFF;
     }
 
     #headline {
@@ -56,6 +95,11 @@
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
+        background-repeat: no-repeat;
+    }
+
+    #headline a {
+        margin-top: 2rem;
     }
 
     #headline > div {
@@ -63,17 +107,17 @@
     }
 
     #headline > h2, #headline > h3 {
-        padding: 0.25;
-        margin: 0 1rem;
+        margin: 0;
+        border-bottom: 0;
     }
 
-    #background-section > * {
-        width: 600px;
+    #background-section > div {
+        width: 80vw;
     }
 
     section {
         margin: 0;
-        padding: 0.25rem;
+        padding: 1rem;
     }
 
     a {
@@ -81,41 +125,91 @@
         border-bottom: transparent 4px solid;
     }
 
-    #email:hover, nav a:hover {
-        border-bottom: #394fff 4px solid;
+    a:visited {
+        color: inherit;
+    }
+
+    nav a:hover {
+        border-bottom: var(--blue) 4px solid;
     }
 
     #sign-up {
-        background-color: #394fff;
-        color: white;
+        background-color: var(--blue);
+        border-radius: 15px;
+        color: var(--button-text);
         padding: 0.5rem;
+        transition: 0.3s;
     }
 
-    #sign-up:hover {
+    #sign-up:hover,  #contact-section a:hover{
         text-decoration: none;
+        background-color: #394fff;
     }
 
     #contact-section a {
         display: block;
         margin-bottom: 1rem;
         width: max-content;
+
+        padding: 0.5rem;
+        transition: 0.3s;
+        background-color: var(--blue);
+        border-radius: 15px;
+        color: var(--button-text);
+    }
+
+    @media (max-width: 768px) {
+        .grid-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 0 1rem;
+            gap: 0;
+            position: static;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        nav a {
+            text-decoration: underline;
+        }
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .another-wrapper {
+            background: linear-gradient(to bottom, var(--blue),  white);
+            width: 100%;
+        }
     }
 
   </style>
   <body>
     <main>
-        <div class="grid-wrapper">
-            <h1>Laura Callahan</h1>  
-            <nav>
-                <a href="#background">Background</a>
-                <a href="#platform">Platform</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class="yet-another-wrapper">
+            <div class="another-wrapper">
+                <div class="grid-wrapper">
+                    <h1>Laura Callahan</h1>  
+                    <nav>
+                        <a href="#background">Background</a>
+                        <a href="#platform">Platform</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
         </div>
         <section id="headline">
             <h2>Laura Callahan</h2>
             <div></div>
             <h3>For Sheridan City Council</h3>
+            <div></div>
+            <a href='https://forms.gle/QJ6UxfpWBiZwNTbL9' id="sign-up">Sign up for Laura's mailing list</a>
         </section>
         <section id="background-section">
             <h2 id="background">Background</h2>
@@ -152,7 +246,6 @@
         <section id="contact-section">
             <h2 id="contact">Contact</h2>
             <a href="mailto:lauracallahanforsheridan@email.com" id="email">lauracallahanforsheridan@gmail.com</a>
-            <a href='https://forms.gle/QJ6UxfpWBiZwNTbL9' id="sign-up">Sign up for Laura's mailing list</a>
         </section>
     </main>
   </body>
