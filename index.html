@@ -5,191 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laura Callahan for Sheridan City Council</title>
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.png" type="image">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=League+Script&display=swap" rel="stylesheet">
   </head>
-  <style>
-    body {
-       font-family: "Bricolage Grotesque", sans-serif;
-       margin: 0;
-    }
-
-    @property --blue {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #222F99;
-    }
-
-    @property --hover-duration {
-        syntax: "<duration>";
-        inherits: false;
-        initial-value: 0.3s;
-    }
-
-    @property --button-text {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: white;
-    }
-
-    .yet-another-wrapper {
-        background: linear-gradient(to right, var(--blue),  white);
-    }
-    
-    .another-wrapper {
-        width: 80%;
-        margin:auto;
-    }
-    .grid-wrapper {
-        display: grid;
-        grid-template-columns: 3fr 2fr;
-        align-items: center;
-        gap: 1rem;
-        padding: 0 1rem;
-
-        border: 2px dashed black;
-        border-radius: 15px;
-    }
-
-    h1 {
-        color: white;
-        font-size: 1.5rem;
-        font-family: "League Script", cursive;
-    }
-
-    h2 {
-       font-size: 1.5rem;
-        border-bottom: #b00b0d 4px solid;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-
-    img {
-        width: 500px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        font-weight: bold;
-    }
-
-    nav a {
-        width: max-content;
-    }
-
-    section {
-        background-color: #EBEDFF;
-    }
-
-    #headline {
-        background-image: url(cat.jpeg);
-        background-size: 100vw;
-        height: calc(0.5*100vh);
-        z-index: 0;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        background-repeat: no-repeat;
-    }
-
-    #headline a {
-        margin-top: 2rem;
-    }
-
-    #headline > div {
-       width: 100%;
-    }
-
-    #headline > h2, #headline > h3 {
-        margin: 0;
-        border-bottom: 0;
-    }
-
-    #background-section > div {
-        width: 80vw;
-    }
-
-    section {
-        margin: 0;
-        padding: 1rem;
-    }
-
-    a {
-        text-decoration: none;
-        border-bottom: transparent 4px solid;
-    }
-
-    a:visited {
-        color: inherit;
-    }
-
-    nav a:hover {
-        border-bottom: var(--blue) 4px solid;
-    }
-
-    #sign-up {
-        background-color: var(--blue);
-        border-radius: 15px;
-        color: var(--button-text);
-        padding: 0.5rem;
-        transition: 0.3s;
-    }
-
-    #sign-up:hover,  #contact-section a:hover{
-        text-decoration: none;
-        background-color: #394fff;
-    }
-
-    #contact-section a {
-        display: block;
-        margin-bottom: 1rem;
-        width: max-content;
-
-        padding: 0.5rem;
-        transition: 0.3s;
-        background-color: var(--blue);
-        border-radius: 15px;
-        color: var(--button-text);
-    }
-
-    @media (max-width: 768px) {
-        .grid-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            padding: 0 1rem;
-            gap: 0;
-            position: static;
-        }
-
-        h1 {
-            margin-bottom: 0;
-        }
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-        }
-        nav a {
-            text-decoration: underline;
-        }
-        nav a:hover {
-            text-decoration: none;
-        }
-
-        .another-wrapper {
-            background: linear-gradient(to bottom, var(--blue),  white);
-            width: 100%;
-        }
-    }
-
-  </style>
   <body>
     <main>
         <div class="yet-another-wrapper">
@@ -205,18 +26,18 @@
             </div>
         </div>
         <section id="headline">
-            <h2>Laura Callahan</h2>
-            <div></div>
-            <h3>For Sheridan City Council</h3>
-            <div></div>
-            <a href='https://forms.gle/QJ6UxfpWBiZwNTbL9' id="sign-up">Sign up for Laura's mailing list</a>
+            <div id="headline-wrapper">
+                <h2>Laura Callahan</h2>
+                <div></div>
+                <h3>For Sheridan City Council</h3>
+                <div></div>
+                <a href='https://forms.gle/QJ6UxfpWBiZwNTbL9' id="sign-up">Sign up for Laura's mailing list</a>
+            </div>
         </section>
         <section id="background-section">
             <h2 id="background">Background</h2>
-            <div>The daughter of an Army officer, Laura moved to Colorado in 2013.
-                Since graduating from the University of Denver, she has been working as a 
-            software engineer. Laura moved to the City of Sheridan in 2021, and has been
-        an active member of the Planning Commission during her residence. </div>
+            <div>The daughter of an Army officer, Laura moved to Colorado in 2013 after growing up in Germany. Since graduating from the University of Denver, she has been working as a software engineer. Laura moved to the City of Sheridan in 2021, and has been an active member of the Planning Commission during her residence. She has also assisted the Roots in Sheridan program with their outreach efforts. Laura has worked with Humane Colorado to curb the spread of disease and cat overpopulation in the community cats with <a href="https://www.alleycat.org/our-work/trap-neuter-return/">trap, neuter, and release</a> services. 
+            </div>
         </section>
         <section>
             <h2 id="platform">Platform</h2>
